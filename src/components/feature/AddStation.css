@@ -1,0 +1,17 @@
+.Station{
+    width: 58%;
+    margin: 0 auto;
+}
+.Station-Header {
+    height: 62px;
+    padding-top: 1px;
+    background: linear-gradient(to right, rgb(56, 189, 248), rgb(103, 232, 249));
+}
+.Station-body {
+    background: #d9d9d9;
+}
+.Close-btn {
+    float: right;
+    margin-top: -40px;
+    margin-right: 5rem;
+}
