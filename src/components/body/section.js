@@ -5,16 +5,18 @@ import AddStation from '../feature/AddStation';
 function Section() {
     const [showStation, setShowStation] = useState(false);
     return (
-        <div className="section">
+        <div className="section" style={{padding: "12px 0"}}>
             <button className="add"
                 style={{
                     backgroundColor: '#0a4757',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    color: 'white',
+                    marginTop: '2px'
             }}
                 onClick={() => setShowStation(!showStation)}
             >
                 <VscDiffAdded />
-                <span>Thêm trạm</span>
+                <span style={{marginLeft: '5px'}}>Thêm trạm</span>
             </button>
             {showStation && <AddStation showStation={showStation} setShowStation={setShowStation}/>}
         </div>

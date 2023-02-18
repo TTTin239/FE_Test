@@ -8,7 +8,7 @@ function AddStation({ showStation, setShowStation }) {
         <div className='Station'>
             <div className='Station-Header'>
                 <h4>Thêm trạm mới</h4>
-                <AiOutlineCloseCircle className='Close-btn' onClick={() => setShowStation(!showStation)}/>
+                <AiOutlineCloseCircle className='Close-btn' onClick={() => setShowStation(!showStation)} />
             </div>
             <div className='Station-body'>
                 <table style={{ textAlign: 'center', margin: '0 auto' }}>
@@ -21,7 +21,7 @@ function AddStation({ showStation, setShowStation }) {
                     <tr>
                         <th>Quận/Huyện</th>
                         <th>
-                            <select>
+                            <select style={{ width: '10.5rem' }}>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
@@ -34,18 +34,18 @@ function AddStation({ showStation, setShowStation }) {
                         <input type='text' placeholder='0 tập tin đã chọn'/>
                     </th> */}
                         <th>
-                            <input type='file' />
+                            <input type='file' style={{ marginLeft: '80px' }} />
                         </th>
                     </tr>
                 </table>
-            </div>
-            <div className='Station-footer'>
-                <button className='Close' onClick={() => setShowStation(!showStation)}>
-                    <AiOutlineCloseCircle /> Hủy
-                </button>
-                <button className='Add'>
-                    <FiCheckCircle /> Thêm trạm
-                </button>
+                <div className='Station-footer'>
+                    <button className='Close' onClick={() => setShowStation(!showStation)}>
+                        <AiOutlineCloseCircle /> Hủy
+                    </button>
+                    <button className='Add'>
+                        <FiCheckCircle /> Thêm trạm
+                    </button>
+                </div>
             </div>
         </div>
     )

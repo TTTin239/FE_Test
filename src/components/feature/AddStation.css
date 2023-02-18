@@ -1,11 +1,12 @@
 .Station{
     width: 58%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 .Station-Header {
     height: 62px;
     padding-top: 1px;
-    background: linear-gradient(to right, rgb(56, 189, 248), rgb(103, 232, 249));
+    background: rgb(10, 71, 87);
 }
 .Station-body {
     background: #d9d9d9;
@@ -14,4 +15,14 @@
     float: right;
     margin-top: -40px;
     margin-right: 5rem;
+    cursor: pointer;
+}
+.Close{
+    margin-right: 15px;
+    background: #66ffcc;
+}
+.Station-footer {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    margin-top: 18px;
 }

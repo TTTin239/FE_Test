@@ -7,7 +7,7 @@ function Slider() {
     <div className='Slider'>
       <div className="Info">
         {Data.map((data) => (
-          <div>
+          <div className='Info-data'>
             <table>
               <tr>
                 <th>{data.id}</th>
@@ -33,7 +33,7 @@ function Slider() {
           </div>
         ))}
       </div>
-      <button className='ButtonAdd' onClick={() => setShowProject(!showProject)}>
+      <button className='ButtonAdd' style={{marginBottom: '10px', marginTop: '10px', width: '100%', background: 'rgb(10, 71, 87)', color: 'white'}} onClick={() => setShowProject(!showProject)}>
         Tạo dự án
       </button>
       {showProject && <CreateProject showProject={showProject} setShowProject={setShowProject}/>}
