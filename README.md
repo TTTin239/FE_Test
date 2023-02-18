@@ -1,2 +1,2 @@
 # FE_TEST
-<a href='https://reactjs-tests.netlify.app/'>Link demo</a>
+<a href='https://splendorous-praline-681685.netlify.app/'>Link demo</a>
